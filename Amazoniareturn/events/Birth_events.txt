@@ -1,0 +1,233 @@
+#############################################
+# PREGNANCY STARTS SHOWING EVENTS
+#############################################
+
+# On-action event: Pregnancy starts showing
+character_event = {
+	id = 400
+	desc = EVTDESC400
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion_group = amazonian }
+		NOT = { trait = pregnant }
+		father_of_unborn = {
+			any_spouse = {
+				character = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		prestige = 10
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			father_of_unborn = { character_event = { id = 403 tooltip = EVTTOOLTIP403 } }
+		}
+	}
+}
+
+# On-action event: Pregnancy out of wedlock!
+character_event = {
+	id = 401
+	desc = EVTDESC401
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		NOT = { trait = pregnant }
+		is_married = no
+		is_consort = no
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}				
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		piety = -50
+		prestige = -50
+	}
+}
+
+# On-action event: Pregnancy in matrimony, with another father!
+character_event = {
+	id = 402
+	desc = EVTDESC402
+	picture = "GFX_evt_pregnancy"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		NOT = { trait = pregnant }
+		is_married = yes
+		father_of_unborn = {
+			NOT = {
+				any_spouse = {
+					character = ROOT
+				}			
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA402
+		add_trait = pregnant
+		spouse = { character_event = { id = 404 tooltip = EVTTOOLTIP404 } }
+	}
+}
+
+
+# Consort: Pregnancy starts showing
+character_event = {
+	id = 410
+	desc = EVTDESC410
+	picture = GFX_evt_pregnancy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		NOT = { trait = pregnant }
+		father_of_unborn = {
+			is_consort = ROOT
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		prestige = 10
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			father_of_unborn = { character_event = { id = 413 tooltip = EVTTOOLTIP413 } }
+		}
+	}
+}
+
+# Consort: Pregnancy with another father!
+character_event = {
+	id = 412
+	desc = EVTDESC412
+	picture = "GFX_evt_pregnancy"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		NOT = { trait = pregnant }
+		is_consort = yes
+		father_of_unborn = {
+			NOT = {
+				is_consort = ROOT		
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA412
+		add_trait = pregnant
+		consort = { character_event = { id = 414 tooltip = EVTTOOLTIP414 } }
+	}
+}
+
+
+
+
+
+#############################################
+# EVENTS ON THE BIRTH OF A BASTARD CHILD
+#############################################
+
+# On-action event: A child is born out of wedlock
+character_event = {
+	id = 300
+	desc = EVTDESC300
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		was_conceived_a_bastard = yes
+		NOT = { real_father = { always = yes } } # There is no 'real_father' set, i.e. this is not a hidden, cuckoo bastard
+	}
+
+	option = {
+		name = OK
+		father = {
+			character_event = { id = 301 days = 1 } # The father's reaction
+		}
+	}
+}
+
+character_event = {
+	id = 312
+	desc = "EVTDESC312"
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes 	
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		mother = {
+			is_consort = yes #TODO: Should probably track this in code instead, in case consort status changes during pregnancy			
+			NOT = { religion = hellenic_amazon }
+		}
+	}	
+	
+	option = {
+		name = "EVTOPTA12"
+		add_trait = child_of_consort
+	}
+}
+
+# On-action event: A bastard child is born, but is not recognized as such by the spouse of the mother
+character_event = {
+	id = 318
+	desc = "EVTDESC318"
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		NOT = { religion = hellenic_amazon }
+		real_father = {
+			is_alive = yes
+			ROOT = {
+				father = {
+					NOT = { character = PREVPREV }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "OK"
+		real_father = {
+			character_event = { id = 319 } # The real father is notified
+		}
+	}
+}

@@ -1,0 +1,36 @@
+amazonian = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2 # always try to convert
+	
+	
+
+	hellenic_amazon = {
+		graphical_culture = westerngfx
+		
+		icon = 37
+		
+		color = { 0.1 0.7 0.1 }
+		god_names = {
+			GOD_HERA GOD_ATHENA GOD_ARTEMIS GOD_APHRODITE GOD_PERSEPHONE
+		}
+		evil_god_names = {
+			GOD_HEPHAESTUS GOD_HADES
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = AUGUR
+		
+		female_temple_holders = yes
+		allow_looting = yes
+		feminist = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+
+		aggression = 2
+	}
+}

@@ -1,0 +1,517 @@
+namespace = amareturn
+
+character_event = {
+	id = amareturn.1
+	desc = IMPREGNATEYOURQUEEN
+	
+	picture = "GFX_evt_lovers"
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		has_minor_title = title_amazon_consort
+		is_female = no
+		has_character_flag = amazon_consort
+		liege = {
+			OR = {
+				# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
+				# reverse_has_opinion_modifier = { who = ROOT modifier = amazon_consort }
+				at_location = ROOT
+				}
+			is_pregnant = no
+			is_female = yes
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 1.2
+			age = 40
+		}
+		
+		modifier = {
+			factor = 1.2
+			age = 50
+		}
+		
+		modifier = {
+			factor = 1.5
+			age = 60
+		}
+
+		modifier = {
+			factor = 1.2
+			liege = { age = 30 }
+		}
+		
+		modifier = {
+			factor = 2
+			liege = { age = 40 }
+		}
+		
+		modifier = {
+			factor = 5
+			liege = { age = 50 }
+		}
+		
+		modifier = {
+			factor = 0.95
+			fertility = 0.5
+		}		
+		
+		modifier = {
+			factor = 0.95
+			fertility = 0.6
+		}		
+		
+		modifier = {
+			factor = 0.95
+			fertility = 0.7
+		}
+				
+		modifier = {
+			factor = 0.95
+			fertility = 0.8
+		}
+				
+		modifier = {
+			factor = 0.95
+			fertility = 0.9
+		}
+				
+		modifier = {
+			factor = 0.95
+			fertility = 1
+		}
+		
+		modifier = {
+			factor = 1.1
+			NOT = { fertility = 0.5	}
+		}
+		
+		modifier = {
+			factor = 1.1
+			NOT = { fertility = 0.4 }
+		}		
+		
+		modifier = {
+			factor = 1.1
+			NOT = { fertility = 0.3	}
+		}
+		
+		modifier = {
+			factor = 1.1
+			NOT = { fertility = 0.2	}
+		}
+		
+		modifier = {
+			factor = 1.1
+			NOT = { fertility = 0.1	}
+		}
+				
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 0.5 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 0.6 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 0.7 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 0.8 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 0.9 }
+		}		
+		modifier = {
+			factor = 0.95
+			liege = { fertility = 1 }
+		}		
+		modifier = {
+			factor = 1.1
+			NOT = { liege = { fertility = 0.5 } }
+		}	
+		modifier = {
+			factor = 1.1
+			NOT = { liege = { fertility = 0.4 } }
+		}	
+		modifier = {
+			factor = 1.2
+			NOT = { liege = { fertility = 0.3 } }
+		}	
+		modifier = {
+			factor = 1.2
+			NOT = { liege = { fertility = 0.2 } }
+		}	
+		modifier = {
+			factor = 1.2
+			NOT = { liege = { fertility = 0.1 } }
+		}
+		
+		modifier = {
+			factor = 0.9
+			liege = { opinion = { who = ROOT value = 25 } }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { reverse_opinion = { who = ROOT value = 25 } }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { opinion = { who = ROOT value = 50 } }
+		}
+		modifier = {
+			factor = 0.9
+			liege = { reverse_opinion = { who = ROOT value = 50 } }
+		}
+		
+		modifier = {
+			factor = 2.0
+			trait = chaste
+		}
+		modifier = {
+			factor = 5.0
+			liege = { trait = chaste }
+		}
+	}
+	
+	option = {
+		name = IMPREGNATE
+		liege = { impregnate = ROOT }
+#		liege = { character_event { id = amareturn.2 } }
+		}
+}
+
+# I've been impregnated by a consort!
+
+# character_event = {
+	# id = amareturn.2
+	# desc = AMARETURN.2
+	
+	# picture = "GFX_evt_lovers"
+	# border = GFX_event_normal_frame_diplomacy
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = OK
+		# impregnate = FROM
+	# }
+# }
+		
+		
+# The pregnancy of an Amazon is showing
+
+character_event = {
+	id = amareturn.3
+	desc = amareturn.3
+	picture = "GFX_evt_pregnancy"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = pregnant }
+		religion = hellenic_amazon
+	}
+	
+	option = {
+		name = OK
+		add_trait = pregnant
+		prestige = 10
+		
+		if = {
+			limit = {
+				father_of_unborn = {
+					is_alive = yes
+				}
+			}
+			father_of_unborn = { character_event = { id = 403 tooltip = EVTTOOLTIP403 } }
+		}
+	}
+}
+
+# An Amazon child is born -> add to mother's dynasty
+
+character_event = {
+	id = amareturn.4
+	desc = amareturn.4
+	picture = "GFX_evt_birth"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_female = yes
+		mother = { religion = hellenic_amazon }
+	}
+
+	option = {
+		name = OK
+			dynasty = mother
+			remove_trait = bastard
+		mother = {
+			character_event = { id = amareturn.5 days = 1 } # Mother is informed
+		}
+	}
+}
+
+# The child gets the mothers's dynasty
+character_event = {
+	id = amareturn.5
+	desc = amareturn.5
+	
+	is_triggered_only = yes 
+	picture = GFX_evt_birth
+
+	option = {
+		name = OK
+	}
+}
+
+
+# Remove Consorts; Called when someone dies
+
+character_event = {
+	id = amareturn.6
+	desc = amareturn.6
+	
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = hellenic_amazon
+		any_realm_character = {
+			has_minor_title = title_amazon_consort
+		}
+	}
+				
+	option = {
+		name = OK
+		any_realm_character = {
+			limit = {
+				has_minor_title = title_amazon_consort
+				has_character_flag = amazon_consort
+				# OR = {
+					# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
+					# reverse_has_opinion_modifier = { who = ROOT modifier = amazon_consort }
+				# }
+			}
+		character_event = { id = amareturn.7 days = 1 } # Actually remove the title
+		}
+	}
+}
+	
+character_event = {
+	id = amareturn.7
+	desc = amareturn.7
+	
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_minor_title = title_amazon_consort
+		has_cahracter_flag = amazon_consort
+	}
+	
+	immediate = {
+	}
+		
+	option = {
+		name = OK
+		remove_title = title_amazon_consort
+		remove_lover = FROM
+		clr_character_flag = amazon_consort
+	}
+}
+
+
+# Trials for male children
+
+character_event = {
+	id = amareturn.14
+	desc = amareturn.14
+	
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_female = no
+		mother = { religion = hellenic_amazon }
+	}
+	
+	option = {
+		name = OK
+		dynasty = mother
+		remove_trait = bastard
+		mother = {
+			character_event = { id = amareturn.13 days = 1 } # Mother makes her choice.
+		}
+	}
+}
+
+character_event = {
+	id = amareturn.13
+	desc = amareturn.13
+	
+	picture = GFX_evt_birth
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amareturn.13a
+		random_list = {
+			80 = {
+				FROM = {
+					death = { death_reason = death_sacrificed killer = ROOT }
+					piety = 20
+				}
+			}
+			20 = {
+				FROM = {
+					character_event = { id = amareturn.18 days = 1 } 
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = amareturn.13b
+		piety = -20
+		religion_head = { opinion = { modifier = refused_trial who = ROOT months = 48 } }
+		any_courtier = {
+			limit = {
+				OR = {
+					trait = zealous
+					is_priest = yes
+				}
+			}
+			opinion = { modifier = refused_trial who = ROOT months = 24 }
+			character_event = { id = amareturn.17 days = 1 }
+		}
+	}	
+}
+
+character_event = {
+	id = amareturn.17
+	desc = amareturn.17
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = amareturn.18
+	desc = amareturn.18
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		add_trait = survivor
+		mother = { character_event = { id = amareturn.19 } }
+	}
+}
+
+character_event = {
+	id = amareturn.19
+	desc = amareturn.19
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		prestige = 50
+	}
+}
+
+character_event = {
+	id = amareturn.15
+	desc = amareturn.15
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			trait = has_consort
+		}
+	}
+	
+	option = {
+		name = OK
+		add_trait = has_consort
+	}
+}
+
+character_event = {
+	id = amareturn.16
+	desc = amareturn.16
+	
+	trigger = {
+		has_minor_title = title_amazon_consort
+		NOT = { has_character_flag = amazon_consort }
+		# liege = {
+			# NOT = {
+				# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
+			# }
+		# }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {	
+		name = OK
+		remove_title = title_amazon_consort
+		remove_lover = FROM
+		liege = { character_event = { id = amareturn.21 } }
+	}
+}
+
+character_event = {
+	id = amareturn.21
+	desc = amareturn.21
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = amareturn.22
+	desc = amareturn.22
+	
+	trigger = {
+		trait = has_consort
+		NOT = {
+			any_courtier = {
+				has_character_flag = amazon_consort
+				has_minor_title = title_amazon_consort
+				is_lover = ROOT
+				is_female = no
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+		remove_trait = has_consort
+	}
+}
+
+

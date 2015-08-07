@@ -1,0 +1,19 @@
+RETTYPE_CUL_SARMATIAN = 
+{
+	first_type = 6
+	first_amount = 260
+	
+	second_type = 5
+	second_amount = 240
+
+	special_troops = horse_archers
+	
+	potential = {
+		religion = hellenic_amazon
+	}
+	
+	modifier = {
+		horse_archers_offensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}

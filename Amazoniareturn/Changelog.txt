@@ -1,0 +1,30 @@
+CHANGELOG
+
+Current Verion: 1.1.3
+
+Known Issues:
+- Middle Francia renamed Lorthargingia at Old Gods starting date
+- Pagan county conquest appears as valid causus belli and war will not be declared. This should not be a valid causus belli.
+
+Changes from 1.1.2 to 1.1.3
+CHANGE: Helene now has higher starting wealth and piety
+ADD: Flags for empire and holy order
+FIX: Abdication now works properly for male rulers.
+FIX: Removed duplicate character IDs
+FIX: Amazon religion now works as part of the pagan group
+
+Changes from 1.1.1 to 1.1.2
+FIX: Holy sites issue now resolved. The Amazonian religion is a Hellenistic heresey
+FIX: Some errors in localisations
+
+Changes from 1.1 to 1.1.1
+FIX: Stopped all mercenaries having 0 units
+
+Changes from 1.0 to 1.1
+FIX: Can no longer do county conquests on female rulers
+FIX: Matriarchy head of faith is now always female
+ADD: More female name and dynasty names
+ADD: Cultural building for amazons, provides archers and horse archers
+ADD: Titular empire of Helenic Amazonia, requires the kingdom of Helenic Amazonia, being female + standard empire requirements
+ADD: Holy order - Daughters of Athena
+CHANGE: Amazons now use Southern graphics

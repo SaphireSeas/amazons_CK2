@@ -1,0 +1,52 @@
+	amazon = {
+	graphical_culture = southerngfx
+	
+		sarmatian = {	
+			graphical_culture = southerngfx
+			color = { 0.3 0.55 0.8 }
+			
+			male_names = {
+				Adrianos_Adrian Akakios Alexandros_Alexander Alexios_Alexis Anastasios_Anastasius Anatolios Andreas_Andrew Andronikos_Andronicus Anthemios Anthimos Antiochos Antonios_Antonius Apollonios Arsenios Artemios Athanasios_Athanasius Bardas
+				Bartholomaios_Bartolomeus Basileios_Basil Belisarios_Belisarius Boethios Bosporios Christophoros_Christopher Chrysanthos Chrysogonos Damianos Daniel_Daniel David_David Demetrios_Demetrius Diogenes Dionysios_Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+				Eugenios Euphemios Eusebios Eustathios_Eustace Evangelos Gabriel_Gabriel Gennadios Georgios_George Gerasimos Germanos_Germanus Gregoras_Gregory Gregorios_Gregory Hektorios Helias Herakleios_Heracles Hierotheos Himerios
+				Hippolytos Hypatios Iakobos_Jacob Ignatios_Ignatius Innokentios Ioannes_John Ioannikios Iordanes Ioseph_Joseph Isaakios Isaias Isidoros Ioulianos_Julian Ioustinianos_Justinian Ioustinos_Justin Kaisarios_Caesar
+				Kallinikos Kallistos Komitas Konstantinos_Constantine Konstantios_Constantius Konstas_Constans Kosmas_Cosmas Kyriakos Kyrillos_Cyril Kyros Laurentios_Laurence Lazaros Leon_Leo Leontios_Leontius Loukas Makarios Manuel Markos_Marcus
+				Matthaios_Matthew Maurikios Maximos_Maximus Megistos_Magnus Meletios Methodios Michael_Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos_Nicholas Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+				Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios Polykarpos Porphyrios Prokopios_Procopius Pyrros Raphail Romanos_Roman Sabas Samuel_Samuel Serapion Sebastianos_Sebastian Sergios_Sergius Stephanos_Stephen
+				Staurakios Symeon_Simon Symmachos_Symmachus Theocharistos Theodoros_Theodore Theodosios_Theodosios Theodotos_Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas_Thomas Tiberios_Tiberius Traianos_Trajan
+				Timotheos Tryphon Valerios_Valerius Zacharias Zenobios Zenon
+			}
+			female_names = {
+				Penthesilea Clonie Polemusa Derinoe Evandre Antandre Bremusa Harmothoe Alcibie Derimacheia Antibrote Thermodosa Hippolyta Aella Philippis Prothoe Eriboea Celaeno Eurybia Phoebe Deianeira Asteria Marpe Tecmessa Alcippe
+				Otrera Antiope Ocyale Dioxippe Iphinome Xanthe Hippothoe Laemache Glauce Agave Theseis Clymene Polydora Euryale Harpe Lyce Menippe Thoe Tralla Isocrateia Thiba Palla Koia Koinia Aegea Ainia Ainippe Alce Amasris Anaea Andromache
+				Antianeira Areto Iphito Clete Cyme Cynna Ephesos Amazo Eurypyle Gryne Helene_Helena Hippo Lampedo Latoreia Lysippe Marpesia Melanippe Molpadia Myrleia Myrto Mytilene Orithyia Pantariste Pitane Priene Sanape Sinope Sisyrbe Smyrna Themiscyra
+				Alexis Agathe_Agatha Hagnes_Agnes Anastasia Aphrodisia Aristomache Berenice_Berenike Corinna_Korinna Euanthe Elpis Eudocia_Eudokia Eugeneia_Eugenia Eulalia Eunice_Eunike Euphrasia Euthalia Galene Kallisto_Callisto Melitta_Melissa Menodora Metrodora Myrrine Nikephoros Nymphdora Olympias Pelagia Pherenike Phoibe_Phobe Photine Rhode Roxane_Roxana Sappho Sophia Timo Timothea Tryphaina Xena Zenais Zenobia Zoe
+			}
+			
+			from_dynasty_prefix = "of "
+			
+			# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+			pat_grf_name_chance = 0
+			mat_grf_name_chance = 50
+			father_name_chance = 10
+			
+			# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+			pat_grm_name_chance = 0
+			mat_grm_name_chance = 50
+			mother_name_chance = 30
+			
+			
+			modifier = {
+				fertility = 0.1
+				archers_defensive = 0.2
+				horse_archers_defensive = 0.2
+				archers_offensive = 0.1
+				horse_archers_offensive = 0.1
+				heavy_infantry_offensive = -0.1
+				knights_offensive = -0.1
+				knights_defensive = -0.1
+				
+			}
+			founder_named_dynasties = yes
+	}
+}

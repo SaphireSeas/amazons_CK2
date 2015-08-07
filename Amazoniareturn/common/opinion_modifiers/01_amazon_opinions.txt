@@ -1,0 +1,13 @@
+#### Opinion for Amazon consorts (Opinion boost in minor title)
+
+amazon_consort = {
+		opinion = 5
+	}
+	
+amazon_likes_change_to_enatic = {
+		opinion = 20
+	}
+	
+refused_trial = {
+		opinion = -15
+	}

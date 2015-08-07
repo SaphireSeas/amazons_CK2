@@ -1,0 +1,218 @@
+9999666 = {
+	name = "Otrerid"
+	culture = sarmatian
+	}
+
+9999667 = {
+	name = "Lycid"
+	culture = sarmatian
+	}
+
+
+9999668 = {
+	name = "Sarmatid"
+	culture = sarmatian
+	}
+
+
+9999669 = {
+	name = "Scythid"
+	culture = sarmatian
+	}
+
+
+9999670 = {
+	name = "Geticid"
+	culture = sarmatian
+	}
+
+
+9999671 = {
+	name = "Antianeirid"
+	culture = sarmatian
+	}
+	
+9999672 = {
+	name = "Anthousa"
+	culture = sarmatian
+}
+	
+9999673 = {
+	name = "Aristomache"
+	culture = sarmatian
+}
+
+9999674 = {
+	name = "Anthousa"
+	culture = sarmatian
+}
+
+9999675 = {
+	name = "Artemisa"
+	culture = sarmatian
+}
+
+9999676 = {
+	name = "Berenice"
+	culture = sarmatian
+}
+
+9999677 = {
+	name = "Corinna"
+	culture = sarmatian
+}
+
+9999678 = {
+	name = "Demetria"
+	culture = sarmatian
+}
+
+9999679 = {
+	name = "Demostrate"
+	culture = sarmatian
+}
+
+9999680 = {
+	name = "Doris"
+	culture = sarmatian
+}
+
+9999681 = {
+	name = "Eudoxia"
+	culture = sarmatian
+}
+
+9999682 = {
+	name = "Eulalia"
+	culture = sarmatian
+}
+
+9999683 = {
+	name = "Eunike"
+	culture = sarmatian
+}
+
+9999684 = {
+	name = "Eupraxia"
+	culture = sarmatian
+}
+
+9999685 = {
+	name = "Euthymia"
+	culture = sarmatian
+}
+
+9999686 = {
+	name = "Eutropia"
+	culture = sarmatian
+}
+
+9999687 = {
+	name = "Eutychia"
+	culture = sarmatian
+}
+
+9999688 = {
+	name = "Gaiana"
+	culture = sarmatian
+}
+
+9999689 = {
+	name = "Isiodora"
+	culture = sarmatian
+}
+
+9999690 = {
+	name = "Kallistrate"
+	culture = sarmatian
+}
+
+9999691 = {
+	name = "Ligeia"
+	culture = sarmatian
+}
+
+9999692 = {
+	name = "Lysistrata"
+	culture = sarmatian
+}
+
+9999693 = {
+	name = "Menodora"
+	culture = sarmatian
+}
+
+9999694 = {
+	name = "Nike"
+	culture = sarmatian
+}
+
+9999695 = {
+	name = "Nymphodora"
+	culture = sarmatian
+}
+
+9999696 = {
+	name = "Olympias"
+	culture = sarmatian
+}
+
+9999697 = {
+	name = "Pelagia"
+	culture = sarmatian
+}
+
+9999698 = {
+	name = "Phile"
+	culture = sarmatian
+}
+
+9999699 = {
+	name = "Photine"
+	culture = sarmatian
+}
+
+9999700 = {
+	name = "Sostrate"
+	culture = sarmatian
+}
+
+9999701 = {
+	name = "Syntyche"
+	culture = sarmatian
+}
+
+9999702 = {
+	name = "Thais"
+	culture = sarmatian
+}
+
+9999703 = {
+	name = "Theodora"
+	culture = sarmatian
+}
+
+9999704 = {
+	name = "Theodosia"
+	culture = sarmatian
+}
+
+9999705 = {
+	name = "Theokleia"
+	culture = sarmatian
+}
+
+9999706 = {
+	name = "Theophilia"
+	culture = sarmatian
+}
+
+9999707 = {
+	name = "Xenia"
+	culture = sarmatian
+}
+
+9999708 = {
+	name = "Xeno"
+	culture = sarmatian
+}

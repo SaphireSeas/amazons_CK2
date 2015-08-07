@@ -1,0 +1,93 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+kingdom_of_amazon;Queendom of;;Königinnenreich;;;;;;;;;;;x
+kingdoms_amazon;Queendoms;;Königinnenreiche;;;;;;;;;;;x
+temple_barony_of_amazon;Temple of;;Tempel;;;;;;;;;;;x
+temple_count_of_amazon;Great Temple of;;Großtempel;;;;;;;;;;;x
+temple_duchy_of_amazon;Matriarchy of;;Matriarchat;;;;;;;;;;;x
+temple_kingdom_of_amazon;Archmatriarchy of;;Erzmatriarchat;;;;;;;;;;;x
+temple_empire_of_amazon;Grand Matriarchy of;;Grossmatriarchat;;;;;;;;;;;x
+temple_baron_female_amazon;Priestess;;Priesterin;;;;;;;;;;;x
+temple_baron_amazon;Priest;;Priester;;;;;;;;;;;
+temple_count_female_amazon;Priestess;;Priesterin;;;;;;;;;;;x
+temple_count_amazon;Priest;;Priester;;;;;;;;;;;
+temple_duke_female_amazon;Matriarch;;Matriarchin;;;;;;;;;;;x
+temple_duke_amazon;High Priest;;Hohepriester;;;;;;;;;;;
+temple_king_female_amazon;Archmatriarch;;Erzmatriarchin;;;;;;;;;;;x
+temple_king_amazon;Archpriest;;Erzpriester;;;;;;;;;;;
+temple_emperor_female_amazon;Grand Matriarch;;Großmatriarchin;;;;;;;;;;;x
+temple_emperor_amazon;Supreme Priest;;Oberpriester;;;;;;;;;;;
+amazon;Amazonian;;Amazonisch;;;;;;;;;;;x
+k_Amazonia;Hellenic Amazonia;;Amazonien;;;;;;;;;;;x
+k_Amazonia_adj;Hellenic;;Amazonisch;;;;;;;;;;;x
+k_amazonia;Hellenic Amazonia;;Amazonien;;;;;;;;;;;x
+k_amazonia_adj;Hellenic;;Amazonisch;;;;;;;;;;;x
+e_amazonia;Amazon Empire;;Amazonien;;;;;;;;;;;x
+e_amazonia_adj;Amazonian;;Amazonisch;;;;;;;;;;;x
+d_matriarch;Matriarchy;;Matriarchat;;;;;;;;;;;x
+d_matriarch_adj;Matriarchal;;Matriarchalisch;;;;;;;;;;;x
+AMAZON_MATRIARCH;Matriarch of All Amazons;;Matriarchin Aller Amazonen;;;;;;;;;;;x
+AMAZON_MATRIARCH_CONSORT;Matriarch of All Amazons;;Matriarchin Aller Amazonen;;;;;;;;;;;x
+AMAZON_MATRIARCH_FOA;Your Holiness;;Eure Heiligkeit;;;;;;;;;;;x
+sarmatian;Sarmatian;;Sarmatisch;;;;;;;;;;;x
+amazon;Amazonian;;Amazonisch;;;;;;;;;;;x
+valkyrie_religion;Valkyrie;;Walkürisch;;;;;;;;;;;x
+valkyrie_freyja_religion;Kult der Freyja;;Kult der Freyja;;;;;;;;;;;x
+celtic_religion;Celtic;;Keltisch;;;;;;;;;;;x
+hellenic_amazon;Amazonian;;Amazonisch;;;;;;;;;;;x
+job_spiritual_hellenic_amazon;Oracle;;Orakel;;;;;;;;;;;x
+job_marshal_hellenic_amazon;Marshal;;Heerführerin;;;;;;;;;;;x
+job_spiritual_celtic_amazon;Priestess;;Priesterin;;;;;;;;;;;x
+job_spiritual_valkyrie_amazon;Seeress;;Seherin;;;;;;;;;;;x
+hellenic_amazon_DESC;The Hellenic Amazonian religion is polytheistic, with a pantheon of major and minor gods including Zeus, Ares, Apollo, Aphrodite, Athena and Hera, but most focus is primarily on the goddesses rather than their male counterparts. Defining features in-game: \n* Armies can raid settlements\n* Does not suffer from the same penalties as Pagan religions\n* Can attack any nation with male rulers;;The Hellenic Amazonian religion is polytheistic, with a pantheon of major and minor gods including Zeus, Ares, Apollo, Aphrodite, Athena and Hera, but most focus is primarily on the goddesses rather than their male counterparts. Defining features in-game: \n* Armies can raid settlements\n* Does not suffer from the same penalties as Pagan religions\n* Can attack any nation with male rulers;;;;;;;;;;;x
+title_amazon_consort;Mate;;Gemahl/in;;;;;;;;;;;x
+GOD_HERA;Hera;;Hera;;;;;;;;;;;x
+GOD_ATHENA;Athene;;Athene;;;;;;;;;;;x
+GOD_ARTEMIS;Artemis;;Artemis;;;;;;;;;;;x
+GOD_APHRODITE;Aphrodite;;Aphrodite;;;;;;;;;;;x
+GOD_PERSEPHONE;Persephone;;Persephone;;;;;;;;;;;x
+GOD_HEPHAESTUS;Hephaestus;;Hephaestus;;;;;;;;;;;x
+GOD_HADES;Hades;;Hades;;;;;;;;;;;x
+amazon_consort;Mate;;Gemahl/in;;;;;;;;;;;x
+amazon_likes_change_to_enatic;Change to Enatic Succession;;Wechsel zu enatischer Nachfolge;;;;;;;;;;;x
+refused_trial;Refused male trial;;Keine Prüfung für männl. Kind;;;;;;;;;;;x
+amareturn.1;I shall impregnate my queen!;;Ich werde meine Königin schwängern!;;;;;;;;;;;x
+amareturn.2;I can feel it - I bear the child of one of my consorts!;;Einer meiner Gemahle hat mich geschwängert.;;;;;;;;;;;x
+amareturn.3;It is obvious now - I am with child. Hopefully, I will give birth to a strong, bold amazon.;;Es ist unverkennbar - ich bin schwanger. Hoffentlich werde ich eine starke, tapfere Amazone zur Welt bringen.;;;;;;;;;;;x
+amareturn.5;I have given birth to a girl. According to the ancient custom of all Amazons, daughters are always part of the bloodline of their mothers.;;Ich habe ein Mädchen geboren. Gemäß dem Brauch der Amazonen werden alle Töchter als Teil des Hauses ihrer Mutter angesehen.;;;;;;;;;;;x
+amareturn.6;I am dead. My consorts will be released.;;Ich bin tot. Meine Gemahlen werden entlassen.;;;;;;;;;;;x
+amareturn.7;My queen has sadly passed, and I am consort no longer.;;Meine Königin ist tot, und ich bin nicht länger Gemahl.;;;;;;;;;;;x
+amareturn.8;I am an Amazon. The Gods decree that I shall have Enatic succession.;;Bei den Göttern, alle Amazonen müssen den enatischen Gesetzen gehorchen!;;;;;;;;;;;x
+amareturn.13;I have given birth to a boy. According to the traditions of the $RELIGIONNAME$ faith, he must be subjected to a trial of [Root.Religion.GetRandomGodName].;;Ich habe einen Jungen zur Welt gebracht. Gemäss den Traditionen des $RELIGIONNAME$en Glaubens muss er sich einer Prüfung der [Root.Religion.GetRandomGodName] stellen, um des Lebens würdig erachtet zu werden.;;;;;;;;;;;x
+amareturn.13a;He shall face the trials.;;Er wird sich der Prüfung stellen.;;;;;;;;;;;x
+amareturn.13b;No, he is too precious!;;Nein, er ist zu wertvoll!;;;;;;;;;;;x
+amareturn.800;As an Amazon, my only option is enatic succession.;;As an Amazon, my only option is enatic succession.;;;;;;;;;;;x
+amareturn.801;I'm a minor male or the Head of the Amazon faith. I should abdicate to a woman. Also, I should be an AI and you shouldn't be seeing this.;;I'm a minor male or the Head of the Amazon faith. I should abdicate to a woman. Also, I should be an AI and you shouldn't be seeing this.;;;;;;;;;;;x
+amareturn.802;I don't have a woman to abdicate to, so I'm geting one. Also, this should be AI-only.;;I don't have a woman to abdicate to, so I'm geting one. Also, this should be AI-only.;;;;;;;;;;;x
+anareturn.803;This event is supposed to be obsolete.;;This event is supposed to be obsolete.;;;;;;;;;;;x
+amareturn.804;This event is supposed to be obsolete.;;This event is supposed to be obsolete.;;;;;;;;;;;x
+amareturn.805;I don't have a woman to abdicate to, so I'm geting one. Also, this should be AI-only.;;I don't have a woman to abdicate to, so I'm geting one. Also, this should be AI-only.;;;;;;;;;;;x
+amareturn.14;I'm the child of an Amazon and have the right to belong to her house.;;I'm the child of an Amazon and have the right to belong to her house.;;;;;;;;;;;x
+RETTYPE_CUL_SARMATIAN;Amazon Huntresses;;Amazonische Jägerinnen;;;;;;;;;;;x
+amareturn.17;To your dismay, [From.GetTitledName] has given birth to a boy. This is disappointing as it is - but you are shocked to learn that she has refused to submit him to the trials tradtionally required of any baby boy! You will not soon forgot this outrage.;;Leider hat [From.GetBestName] einen Jungen zur Welt gebracht. Das ist traurig genug - wirklich entsetzt seid Ihr aber, als Ihr erfahrt, daß sie sich geweigert hat, ihn den traditionellen Prüfungen zu unterwerfen! Diese Transgression werdet Ihr nicht so bald verzeihen...;;;;;;;;;;;x
+amareturn.18;Miraculously, you have survived the ordeal the Amazons set for you. You will forever have their respect for your will and ability to survive.;;Wundersamerweise habt Ihr die Prüfung bestanden, die die Amazonen Euch gestellt haben. Ihr werdet für immer ihren Respekt für Euren Willen und Eure Fähigkeit, zu überleben haben.;;;;;;;;;;;x
+amareturn.19;Miraculously, your son survived the ordeal. Your fellow Amazons regard you with renewed respect for giving birth to a child with such a will and ability to survive, even if it is a boy.;;Wundersamerweise hat Euer Sohn die Prüfung bestanden, die ihm gestellt wurde. Eure Amazonen betrachten Euch mit erneuertem Respekt, da Ihr einem Kind mit solchem Willen und solcher Fähigkeit zu Überleben das Leben geschenkt habt.;;;;;;;;;;;x
+survivor;Survivor;;Überlebenskünstler;;;;;;;;;;;x
+survivor_desc;This character has survived the ordeal of the Amazons when he was just born.;;Diese Person hat die Prüfung der Amazonen als Neugeborenes bestanden.;;;;;;;;;;;x
+has_consort_desc;This Amazon has at least two consorts.;;Diese Amazone hat wenigstens zwei Gemahle, was ihre Fruchtbarkeit stärkt.;;;;;;;;;;;x
+has_consort;Has Consort;;Hat Gemahl;;;;;;;;;;;x
+amareturn.16;I and [liege.GetBestName] have grown apart. Among Amaons, divorce is quick and expected under these circumstances.;;Ich und [liege.GetBestName] sind uns fremd geworden. Bei den Amazonen ist eine Scheidung ist schnell und wird unter diesen Umständen erwartet.;;;;;;;;;;;x
+amareturn.21;I and [FrometBestName] have grown apart. Among Amazons, divorce is quick and expected under these circumstances.;;Ich und [From.GetBestName] sind uns fremd geworden. Bei den Amazonen ist eine Scheidung ist schnell und wird unter diesen Umständen erwartet.;;;;;;;;;;;x
+amareturn.899;I find that I actually like that my liege maintains Enatic succession and hereby remove the negative opinion relating to that.;;Eigentlich mag ich es, dass mein Lehnsherr enatischen Gesetzen folgt und gebe meine negativen Meinungen deswegen hiermit auf.;;;;;;;;;;;x
+amareturn.900;According to Amazon custom, I must give my titles to my spouse.;;Gemäss amazonischem Brauch muss ich meine Titel an meine Gemahlin abgeben.;;;;;;;;;;;x
+amareturn.4;I'm [This.GetName]!;;Ich bin [This.GetName]!;;;;;;;;;;;x
+amazon_county_conquest_desc;Amazons may freely invade neighboring counties suffering under the oppression of male rulers.;;Amazonen können benachbarte Grafschaften frei annektieren, die von männlichen Herrschern unterdrückt werden.;;;;;;;;;;;x
+amareturn.15;I have chosen a consort. This will ensure the survival of my line!;;Ich habe einen zusätzlichen Gemahlen auserkoren. So sollte das Überleben meiner Abstammungslinie gesichert sein!;;;;;;;;;;;x
+amareturn.22;Since I have no male mates appointed, I no longer enjoy their benefits.;;Das ich keine männlichen Gemahle habe, verfüge ich nicht länger über die entsprechenden Vorteile.;;;;;;;;;;;x
+ca_culture_amazon_1;Amazon Archery Range;Archerie d'arc;Langbogen-Schießplatz;;Arquería de arco;;;;;;;;;x
+ca_culture_amazon_2;Amazon Archery Range;Archerie d'arc;Langbogen-Schießplatz;;Arquería de arco;;;;;;;;;x
+ca_culture_amazon_3;Amazon Archery Range;Archerie d'arc;Langbogen-Schießplatz;;Arquería de arco;;;;;;;;;x
+ca_culture_amazon_4;Advanced Amazon Archery Range;Archerie d'arc;Langbogen-Schießplatz;;Arquería de arco;;;;;;;;;x
+ca_culture_amazon_1_desc;Amazons are skilled with the bow, both on foot and on horseback. Here they train their skill to greater heights.;Amazones sont qualifiés à l'arc, à pied et à cheval. Ici, ils forment leur compétence à de plus hauts sommets.;Amazonen sind geschickt mit dem Bogen, zu Fuß und zu Pferd. Hier trainieren sie ihre Fähigkeiten, zu größeren Höhen.;;Amazonas son hábiles con el arco, tanto a pie como a caballo. Aquí se entrenan sus habilidades a mayores alturas.;;;;;;;;;x
+d_daughters_of_athena;Daughters of Athena;Filles d'Athéna;Töchter von Athena;;Hijas de Athena;;;;;;;;;x
+GRANDMISTRESS;Grandmistress;Grandemaîtresse;Oberhofmeisterin;;Granmaestra;;;;;;;;;x
+temple_baron_hellenic_amazon;Priestesse;Prêtresses;Priester;;Sacerdotisas;;;;;;;;;x

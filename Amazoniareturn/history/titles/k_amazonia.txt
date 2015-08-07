@@ -1,0 +1,47 @@
+680.1.1={
+	holder = 9999990 #Otrera
+}
+
+740.1.1={
+	holder = 9999992 # Hippolyta
+}
+
+750.1.1={
+	holder = 9999993 # Antiope
+}
+
+760.1.1={
+	holder = 9999991 # Penthesilea
+	law = centralization_1
+	law = succ_gavelkind
+	law = enatic_succession
+}
+
+770.1.1={
+	holder = 9999997 # Lysippe, daughter of Penthesilea
+}
+
+800.1.1={
+	holder = 9999998 # Marpesia, daughter of Lysippe
+}
+
+825.1.1={
+	holder = 9999999 # Lampedo, daughter of Lysippe
+}
+
+830.1.1={
+	holder = 9999980 # Orithyia, daughter of Marpesia
+}
+
+835.1.1={
+	holder = 9999981 # Antiope II, daughter of Marpesia, mother of Helene
+}
+
+867.1.1={
+	holder=9999995
+
+}
+900.1.1={
+	holder=0
+
+}

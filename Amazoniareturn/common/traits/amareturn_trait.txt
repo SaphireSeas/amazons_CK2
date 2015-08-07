@@ -1,0 +1,11 @@
+has_consort = {
+	random = no
+	fertility = 0.15
+}
+
+survivor = {
+	random = no
+	health = 1
+	monthly_character_prestige = 0.5
+	same_religion_opinion = 15
+}

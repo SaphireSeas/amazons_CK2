@@ -1,0 +1,33 @@
+### Consorts of Amazon Rulers
+
+title_amazon_consort = {
+	dignity = 0.25
+	realm_in_name = yes
+	grant_limit = 3
+	opinion_effect = 20
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.01
+	
+	allow = {
+		FROM = {
+			is_feudal = yes
+			religion = hellenic_amazon
+			}
+		religion = hellenic_amazon
+		}
+		
+	gain_effect = {
+		add_lover = FROM
+#	 	opinion = { modifier = amazon_consort who = FROM years = 100 }
+		set_character_flag = amazon_consort
+		FROM = { character_event = { id = amareturn.15 days = 1 } }
+	}
+	lose_effect = {
+#		remove_opinion = { who = FROM modifier = amazon_consort }
+		clr_character_flag = amazon_consort
+		remove_lover = FROM
+	}
+	
+	message = yes
+}

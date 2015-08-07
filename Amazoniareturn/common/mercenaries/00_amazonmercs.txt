@@ -1,0 +1,7 @@
+daughters_of_athena_composition = {
+	levy_size = 6
+	archers = 150
+	light_infantry = 150
+	heavy_infantry = 300
+	horse_archers = 150
+}

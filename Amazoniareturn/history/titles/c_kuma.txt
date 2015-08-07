@@ -1,0 +1,76 @@
+680.1.1 = {
+	liege="k_amazonia"
+	holder = 9999990 #Otrera
+}
+
+740.1.1 = {
+	holder = 9999992 # Hippolyta
+}
+
+750.1.1 = {
+	holder = 9999993 # Antiope
+}
+
+760.1.1 = {
+	holder = 9999991 # Penthesilea
+}
+
+770.1.1 = {
+	holder = 9999997 # Lysippe, daughter of Penthesilea
+}
+
+800.1.1 = {
+	holder = 9999998 # Marpesia, daughter of Lysippe
+}
+
+825.1.1 = {
+	holder = 9999999 # Lampedo, daughter of Lysippe
+}
+
+830.1.1 = {
+	holder = 9999980 # Orithyia, daughter of Marpesia
+}
+
+835.1.1 = {
+	holder = 9999981 # Antiope II, daughter of Marpesia, mother of Helene
+}
+867.1.1 = {
+	holder=9999995
+}
+1066.1.1 = {
+	liege = "d_alania"
+{
+holder=93040
+}
+1100.1.1=
+{
+holder=93041
+}
+1130.1.1=
+{
+holder=93042
+}
+1160.1.1=
+{
+holder=228063
+}
+1200.1.1=
+{
+holder=93043
+}
+1230.1.1=
+{
+holder=93044
+}
+1260.1.1=
+{
+holder=93045
+}
+1290.1.1=
+{
+holder=93046
+}
+1313.1.1=
+{
+holder=480160
+}

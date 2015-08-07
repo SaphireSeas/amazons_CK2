@@ -1,0 +1,75 @@
+e_amazonia = { 
+	color = { 148 0 211 }
+	color2 = { 220 220 0 }
+	
+	
+	capital = 604
+	religion = hellenic_amazon
+	culture = sarmatian
+	
+	allow = { is_female = yes}
+	
+	k_amazonia = { 
+		color = { 148 0 211 }
+		color2 = { 220 220 0 }
+		
+		capital = 604
+		religion = hellenic_amazon
+		culture = sarmatian
+		
+		allow = { is_female = yes}
+	}
+	
+}
+
+d_matriarch = {
+	color = { 230 51 51 }
+	color2 = { 220 220 0 }
+
+	title = "AMAZON_MATRIARCH_CONSORT"
+	title_female = "AMAZON_MATRIARCH"
+	foa = "AMAZON_MATRIARCH_FOA"
+
+	short_name = yes
+
+	allow = {
+		always = yes	
+	}
+
+	landless = yes
+	is_female = yes
+	controls_religion = hellenic_amazon
+	
+	religion = hellenic_amazon
+	
+	}
+	
+d_daughters_of_athena = {
+	color = { 200 10 10 }
+	color2 = { 220 50 220 }
+	
+	
+	
+	title = "GRANDMASTER"
+	title_female = "GRANDMISTRESS"
+	foa = "GRANDMASTER_FOA"
+
+	allow = {
+		is_female = yes
+	}
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	culture = samaritan
+	primary = yes
+	
+	religion = hellenic_amazon
+	
+	mercenary_type = daughters_of_athena_composition
+	
+	monthly_income = 2
+
+}

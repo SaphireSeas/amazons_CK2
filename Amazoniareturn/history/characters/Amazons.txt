@@ -1,0 +1,363 @@
+#### Return of the Amazons Characters
+
+9999990 = {
+	name = "Otrera"
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+
+9999991 = {
+	name = "Penthesilea"
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999990 
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	767.1.1 = {
+		wealth = 500
+		piety = 120
+		effect = {
+			spawn_unit = {
+				province = 604 
+				owner = ROOT
+				leader = ROOT
+				match_character = ROOT
+				match_mult = 10.0
+				attrition = 0.5
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 23
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+				
+			}
+			new_character = {
+				spawn_unit = {
+					province = 604 
+					owner = ROOT
+					leader = THIS
+					match_character = ROOT
+					match_mult = 12.0
+					attrition = 0.5
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 27
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+			}
+		}
+	}
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+
+9999992 = {
+	name = "Hippolyta"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999990 
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+
+9999993 = {
+	name = "Antiope"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999990 
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+
+9999994 = {
+	name = "Melanippe"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999990 
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+
+9999997 = {
+	name = "Lysippe"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999991 
+
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+
+9999998 = {
+	name = "Marpesia"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999997 
+
+	765.1.1 = {
+		birth = "765.1.1"
+	}
+
+	825.1.1 = {
+		death = "825.1.1"
+	}
+}
+
+9999999 = {
+	name = "Lampedo"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999997 
+
+	775.1.1 = {
+		birth = "775.1.1"
+	}
+
+	835.1.1 = {
+		death = "835.1.1"
+	}	
+}
+
+9999980 = {
+	name = "Orithyia"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999999 
+
+	795.1.1 = {
+		birth = "795.1.1"
+	}
+
+	855.1.1 = {
+		death = "855.1.1"
+	}
+}
+
+9999981 = {
+	name = "Antiope"
+
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+	mother = 9999999 
+
+	800.1.1 = {
+		birth = "800.1.1"
+}
+
+	867.1.1 = {
+		death = "867.1.1"
+	}
+}
+	
+
+9999995 = {
+	name = "Helene"
+	dynasty=9999666
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+
+	mother = 9999981
+	
+	
+	844.8.27={
+		birth="844.8.27"
+	}
+	
+	867.1.1 = {
+		wealth = 500
+		piety = 120
+		effect = {
+			spawn_unit = {
+				province = 604 
+				owner = ROOT
+				leader = ROOT
+				match_character = ROOT
+				match_mult = 10.0
+				attrition = 0.5
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 23
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+				
+			}
+			new_character = {
+				spawn_unit = {
+					province = 604 
+					owner = ROOT
+					leader = THIS
+					match_character = ROOT
+					match_mult = 12.0
+					attrition = 0.5
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 27
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+			}
+		}
+	}
+	900.1.1 = {
+		death = "900.1.1"
+	}
+}
+
+9999996 = {
+	name = "Demetra"
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="sarmatian"
+
+	
+	821.7.05={
+		birth="821.7.05"
+	}
+	900.1.1 = {
+		death = "900.1.1"
+	}
+}
+
+9999967 = {
+	name = "Xena"
+	female = yes
+	
+	religion="hellenic_amazon"
+	culture="sarmatian"
+
+	trait = brave
+	trait = skilled_tactician
+	martial = 12
+
+	833.4.26={
+		birth="833.4.26"
+	}
+	
+	878.8.4 = {
+		death = "878.8.4"
+	}
+
+}

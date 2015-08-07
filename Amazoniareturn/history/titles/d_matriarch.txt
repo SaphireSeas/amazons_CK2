@@ -1,0 +1,20 @@
+20.1.1 = {
+	active = yes
+	law = enatic_succession
+}
+769.1.1={
+    holder = 9999994
+}
+770.1.1 = {
+    holder = 9999997
+}
+800.1.1 = {
+    holder = 9999998
+}
+825.1.1 = {
+	holder=9999996
+	liege = "k_Amazonia"
+}
+900.1.1 = {
+	holder = 0
+}

@@ -1,0 +1,18 @@
+c_ephesos = {
+	holy_site = hellenic_amazon
+}	
+c_abydos = {
+	holy_site = hellenic_amazon
+	sarmatian = "Troy"
+}
+c_amisos = {
+	holy_site = hellenic_amazon
+	sarmatian = "Themyscira"
+}
+c_trapezous = {
+	holy_site = hellenic_amazon
+}
+c_kuma = {
+	holy_site = hellenic_amazon
+}
+				

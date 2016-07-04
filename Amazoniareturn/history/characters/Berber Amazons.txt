@@ -1,0 +1,242 @@
+#### Return of the Amazons (Africa) Characters
+
+9998001 = {
+	name = "Kahina"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+
+	657.1.1 = {
+		birth = "657.1.1"
+		add_trait = strong
+		add_trait = zealous
+		add_trait = genius
+		add_trait = skilled_tactician
+	}
+	700.1.1 = {
+		death = "700.1.1"
+	}
+}
+9998002 = {
+	name = "Dihya"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998001
+	
+	697.1.1 = {
+		birth = "697.1.1"
+	}
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+9998003 = {
+	name = "Monica"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998002
+	
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	765.1.1 = {
+		death = "765.1.1"
+	}
+}
+9998004 = {
+	name = "Layla"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998003
+	750.7.1 = {
+		birth = "750.7.1"
+	}
+	767.1.1 = {
+		wealth = 500
+		piety = 120
+		effect = {
+			spawn_unit = {
+				province = 847 
+				owner = ROOT
+				leader = ROOT
+				match_character = ROOT
+				match_mult = 10.0
+				attrition = 0.5
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 23
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+				
+			}
+			new_character = {
+				spawn_unit = {
+					province = 847 
+					owner = ROOT
+					leader = THIS
+					match_character = ROOT
+					match_mult = 12.0
+					attrition = 0.5
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 27
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+			}
+		}
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+9998005 = {
+	name = "Zahida"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998004
+	
+	767.9.9 = {
+		birth = "767.9.9"
+	}
+	831.1.1 = {
+		death = "831.1.1"
+	}
+}
+9998006 = {
+	name = "Silya"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998005
+	
+	800.1.1 = {
+		birth = "800.1.1"
+	}
+	865.1.1 = {
+		death = "865.1.1"
+	}
+}
+9998007 = {
+	name = "Kahina"
+	dynasty=9998001
+	female=yes
+
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+
+	mother = 9998006
+	
+	
+	834.5.15={
+		birth="834.5.15"
+	}
+	
+	867.1.1 = {
+		wealth = 500
+		piety = 120
+		effect = {
+			spawn_unit = {
+				province = 847
+				owner = ROOT
+				leader = ROOT
+				match_character = ROOT
+				match_mult = 10.0
+				attrition = 0.5
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 23
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+				
+			}
+			new_character = {
+				spawn_unit = {
+					province = 847
+					owner = ROOT
+					leader = THIS
+					match_character = ROOT
+					match_mult = 12.0
+					attrition = 0.5
+				}
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 27
+				attributes = {
+					martial = 9
+				}
+				trait = skilled_tactician
+				trait = lustful
+				trait = brave
+			}
+		}
+	}
+	900.1.1 = {
+		death = "900.1.1"
+	}
+}
+9998008 = {
+	name = "Layla"
+	dynasty=9998001
+	female=yes
+
+	religion="hellenic_amazon"
+	culture="maghreb_arabic"
+	mother = 9998007
+	
+	865.9.7 = {
+		birth = "865.9.7"
+	}
+	942.1.1 = {
+		death = "942.1.1"
+	}
+}

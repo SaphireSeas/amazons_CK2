@@ -5,6 +5,7 @@ title_amazon_consort = {
 	realm_in_name = yes
 	grant_limit = 3
 	opinion_effect = 20
+	revoke_allowed = yes
 	
 	monthly_salary = 0.05
 	monthly_prestige = 0.01
@@ -13,9 +14,9 @@ title_amazon_consort = {
 		FROM = {
 			is_feudal = yes
 			religion = hellenic_amazon
-			}
-		religion = hellenic_amazon
 		}
+		religion = hellenic_amazon
+	}
 		
 	gain_effect = {
 		add_lover = FROM

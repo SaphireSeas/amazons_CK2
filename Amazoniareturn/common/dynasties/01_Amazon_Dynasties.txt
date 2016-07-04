@@ -216,3 +216,7 @@
 	name = "Xeno"
 	culture = sarmatian
 }
+9998001 = {
+	name = "Kahinid"
+	culture = maghreb_arabic
+}

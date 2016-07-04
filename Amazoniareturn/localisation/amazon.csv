@@ -18,9 +18,11 @@ temple_emperor_female_amazon;Grand Matriarch;;Großmatriarchin;;;;;;;;;;;x
 temple_emperor_amazon;Supreme Priest;;Oberpriester;;;;;;;;;;;
 amazon;Amazonian;;Amazonisch;;;;;;;;;;;x
 k_Amazonia;Hellenic Amazonia;;Amazonien;;;;;;;;;;;x
-k_Amazonia_adj;Hellenic;;Amazonisch;;;;;;;;;;;x
+k_Amazonia_adj;Amazonian;;Amazonisch;;;;;;;;;;;x
 k_amazonia;Hellenic Amazonia;;Amazonien;;;;;;;;;;;x
 k_amazonia_adj;Hellenic;;Amazonisch;;;;;;;;;;;x
+k_libya_amazonia;Amazonia Libya;;Amazonien;;;;;;;;;;;x
+k_libya_amazonia_adj;Amazonian;;Amazonisch;;;;;;;;;;;x
 e_amazonia;Amazon Empire;;Amazonien;;;;;;;;;;;x
 e_amazonia_adj;Amazonian;;Amazonisch;;;;;;;;;;;x
 d_matriarch;Matriarchy;;Matriarchat;;;;;;;;;;;x
@@ -39,7 +41,8 @@ job_marshal_hellenic_amazon;Marshal;;Heerführerin;;;;;;;;;;;x
 job_spiritual_celtic_amazon;Priestess;;Priesterin;;;;;;;;;;;x
 job_spiritual_valkyrie_amazon;Seeress;;Seherin;;;;;;;;;;;x
 hellenic_amazon_DESC;The Hellenic Amazonian religion is polytheistic, with a pantheon of major and minor gods including Zeus, Ares, Apollo, Aphrodite, Athena and Hera, but most focus is primarily on the goddesses rather than their male counterparts. Defining features in-game: \n* Armies can raid settlements\n* Does not suffer from the same penalties as Pagan religions\n* Can attack any nation with male rulers;;The Hellenic Amazonian religion is polytheistic, with a pantheon of major and minor gods including Zeus, Ares, Apollo, Aphrodite, Athena and Hera, but most focus is primarily on the goddesses rather than their male counterparts. Defining features in-game: \n* Armies can raid settlements\n* Does not suffer from the same penalties as Pagan religions\n* Can attack any nation with male rulers;;;;;;;;;;;x
-title_amazon_consort;Mate;;Gemahl/in;;;;;;;;;;;x
+title_amazon_consort;Mate;;Gemahlin;;;;;;;;;;;x
+title_amazon_consort_desc;A mate can serve both as a husband and a councillor to a queen. Given amazons often do not have a husband, it is the most prestigious post a male can hope for.;;Ein gemahlin kann als ein gemahl oder einberaten dienen. Weil die konigen hat kein ehemann, es ist der meisten respektabel stelle ein mann kann haben;;;;;;;;;;;x
 GOD_HERA;Hera;;Hera;;;;;;;;;;;x
 GOD_ATHENA;Athene;;Athene;;;;;;;;;;;x
 GOD_ARTEMIS;Artemis;;Artemis;;;;;;;;;;;x
@@ -91,3 +94,5 @@ ca_culture_amazon_1_desc;Amazons are skilled with the bow, both on foot and on h
 d_daughters_of_athena;Daughters of Athena;Filles d'Athéna;Töchter von Athena;;Hijas de Athena;;;;;;;;;x
 GRANDMISTRESS;Grandmistress;Grandemaîtresse;Oberhofmeisterin;;Granmaestra;;;;;;;;;x
 temple_baron_hellenic_amazon;Priestesse;Prêtresses;Priester;;Sacerdotisas;;;;;;;;;x
+find_mate_ai;Find Mate;;Finden Männchen;;;;;;;;;;;x
+find_mate_ai_desc;I should find an appropriate mate to continue my line (AI only);;Ich sollte ein Männchen finden, so meine dynastie weiterhin;;;;;;;;;;;x

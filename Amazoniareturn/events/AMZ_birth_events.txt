@@ -13,13 +13,11 @@ character_event = {
 		has_character_flag = amazon_consort
 		liege = {
 			OR = {
-				# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
-				# reverse_has_opinion_modifier = { who = ROOT modifier = amazon_consort }
 				at_location = ROOT
 				}
 			is_pregnant = no
 			is_female = yes
-			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -253,8 +251,8 @@ character_event = {
 
 	option = {
 		name = OK
-			dynasty = mother
-			remove_trait = bastard
+		dynasty = mother
+		remove_trait = bastard
 		mother = {
 			character_event = { id = amareturn.5 days = 1 } # Mother is informed
 		}
@@ -298,10 +296,7 @@ character_event = {
 			limit = {
 				has_minor_title = title_amazon_consort
 				has_character_flag = amazon_consort
-				# OR = {
-					# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
-					# reverse_has_opinion_modifier = { who = ROOT modifier = amazon_consort }
-				# }
+
 			}
 		character_event = { id = amareturn.7 days = 1 } # Actually remove the title
 		}
@@ -318,7 +313,7 @@ character_event = {
 	
 	trigger = {
 		has_minor_title = title_amazon_consort
-		has_cahracter_flag = amazon_consort
+		has_character_flag = amazon_consort
 	}
 	
 	immediate = {
@@ -460,12 +455,14 @@ character_event = {
 	
 	trigger = {
 		has_minor_title = title_amazon_consort
-		NOT = { has_character_flag = amazon_consort }
-		# liege = {
-			# NOT = {
-				# has_opinion_modifier = { who = ROOT modifier = amazon_consort }
-			# }
-		# }
+		OR = {
+			NOT = { has_character_flag = amazon_consort }
+			liege = {
+				 NOT = {
+					has_opinion_modifier = { who = ROOT modifier = opinion_lover }
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -476,6 +473,7 @@ character_event = {
 		name = OK
 		remove_title = title_amazon_consort
 		remove_lover = FROM
+		clr_character_flag amazon_consort
 		liege = { character_event = { id = amareturn.21 } }
 	}
 }

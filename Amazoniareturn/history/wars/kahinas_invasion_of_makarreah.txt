@@ -1,0 +1,19 @@
+name = "Kahina's Invasion of Marrakech"
+#Here to ensure Expasion in the South
+casus_belli = {
+	actor = 9998007 # Kahina II of Libya Amazonia
+	recipient = 159506 #Idrisid Sultan
+	casus_belli=religious
+	landed_title=d_marrakech
+	date=867.1.1
+}
+
+867.1.1 = {
+	add_attacker = 9998007
+	add_defender = 159506 #Idrisid Sultan
+}
+
+871.2.1 = {
+	rem_attacker = 9998007
+	rem_defender = 159506
+}

@@ -1,0 +1,42 @@
+targetted_decisions = {
+
+	find_mate_ai = {
+		filter = dynasty
+		ai_target_filter = self
+		potential = {
+			ai = yes
+			is_adult = yes
+			is_ruler = yes
+			NOT = { any_child = { is_female = yes }}
+			is_female = yes
+			religion = hellenic_amazon
+			NOT = { any_courtier = { has_minor_title = title_amazon_consort } }
+		}
+		allow = {
+			NOR = {
+				trait = celibate
+				tier = BARON#No need for Barons, they seem quite happy to matri-marry, and they're only barons
+				is_feudal = no
+			}
+		}
+		effect = {
+			create_character = {
+				random_traits = yes
+				religion = ROOT
+				culture = ROOT
+				female = no
+			}
+			new_character = {
+				give_minor_title = title_amazon_consort
+				set_character_flag = amazon_consort
+				add_lover = ROOT
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

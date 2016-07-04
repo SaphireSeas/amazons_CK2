@@ -1,0 +1,170 @@
+# I'm an Amazon! I should have enatic succession! No dirty enatic-cognatic, THANK YOU!
+
+character_event = {
+	id = amareturn.800
+	desc = amareturn.800
+
+	trigger = {
+		religion_group = amazonian
+		primary_title = {
+			NOT = {
+				has_law = enatic_succession
+			}
+		}
+	}	
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+		
+	immediate = {		
+		primary_title = {
+			gender_succ = enatic
+		}
+	}
+	
+	option = {
+		name = OK	
+		any_vassal = {
+			limit = {
+				religion_group = amazonian
+				has_opinion_modifier = { who = ROOT modifier = succ_law_change }
+			}
+			character_event = { id = amareturn.899 }
+		}
+	}
+}
+# Give non-feudal Barony to female character; abdicate to spouse if liege is not player
+character_event = {
+	id = amareturn.801
+	desc = amareturn.801
+	trigger = {
+		ai = yes
+		tier = BARON
+		is_female = no
+		religion = hellenic_amazon
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = OK
+		create_random_priest = {
+			female = yes
+			culture = ROOT
+			religion = ROOT
+			random_traits = yes
+		}
+		new_character = {
+			if = {
+				limit = { ROOT = { is_feudal = yes} }
+				add_matrilineal_spouse = ROOT
+			}
+			ROOT = {
+				any_demesne_title = {
+					gain_title = PREVPREV
+				}
+			}
+		}
+	}
+}
+character_event = {
+	id = amareturn.899
+	desc = amareturn.899
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = amazonian
+		OR = {
+			has_opinion_modifier = { who = FROM modifier = succ_law_change }
+			has_opinion_modifier = { who = FROM modifier = bad_succ_law_change }
+			has_opinion_modifier = { who = FROM modifier = good_succ_law_change }
+		}
+	}
+	
+	option = {
+		name = OK
+		remove_opinion = { who = FROM modifier = good_succ_law_change }
+		remove_opinion = { who = FROM modifier = bad_succ_law_change }
+		remove_opinion = { who = FROM modifier = succ_law_change }
+	}
+}
+
+# Abdicate to spouse
+
+character_event = {
+	id = amareturn.900
+	desc = amareturn.900
+	
+#	only_men = yes
+#	only_rulers = yes
+	
+	trigger = {
+		ai = yes
+		liege = { #Player can grant to men if he really wants to
+			ai = yes
+			religion_group = amazonian
+		}
+		primary_title = {
+			is_recent_grant = yes
+		}
+		is_female = no
+		is_married = yes
+		spouse = { #Player won't receive free counties and titles this way
+			ai = yes
+			religion_group = amazonian
+		}
+		religion_group = amazonian
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = OK
+		abdicate = yes
+		abdicate_to = spouse
+		move_character = spouse
+	}
+}
+
+character_event = {
+	id = amareturn.1000
+	desc = amareturn.1000
+
+	trigger = {
+		ai = yes
+		primary_title = {
+			OR = { 
+				title = d_matriarch
+				title = d_daughters_of_athena
+			}
+		}
+		is_female = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = OK
+		create_random_priest = {
+			female = yes
+			culture = sarmatian
+			religion = hellenic_amazon
+			random_traits = yes
+		}
+		new_character = {
+			ROOT = {
+				any_demesne_title = {
+					gain_title = PREVPREV
+				}
+			}
+		}
+	}
+}

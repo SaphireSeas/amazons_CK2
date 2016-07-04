@@ -1,0 +1,18 @@
+on_post_birth = {
+	events = {				
+		amareturn.4 # Female child bortn to an Amazon
+		amareturn.14 # Male child bortn to an Amazon
+		amareturn.16 # Set child's real father
+	}
+}
+#character (at 2 months)
+on_pregnancy = {
+	events = {
+		amareturn.3 # Amazon pregnancy	
+ 	}
+}
+on_death = {
+	events = {
+		amareturn.6
+	}
+}

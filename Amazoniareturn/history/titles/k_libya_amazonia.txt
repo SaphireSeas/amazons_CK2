@@ -1,0 +1,33 @@
+680.1.1={
+	holder = 9998001 #Kahina I
+}
+
+700.1.1={
+	holder = 9998002 # Dihya
+}
+
+750.1.1={
+	holder = 9998003 # Monica
+}
+
+765.1.1={
+	holder = 9998004 # Layla
+	law = centralization_1
+	law = succ_gavelkind
+	law = enatic_succession
+}
+790.1.1={
+	holder = 9998005 # Zahida
+}
+831.1.1={
+	holder = 9998006 # Silya
+}
+865.1.1={
+	holder = 9998007 # Kahina II
+}
+900.1.1={
+	holder = 9998007 # Layla II
+}
+942.1.1={
+	holder =  0
+}

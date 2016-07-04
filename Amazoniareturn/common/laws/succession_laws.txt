@@ -683,6 +683,7 @@ gender_laws = {
 				NOT = { religion_group = muslim }
 				NOT = { religion = aztec }
 				NOT = { religion = aztec_reformed }
+				NOT = { religion = hellenic_amazon }
 				is_tribal = no
 				is_nomadic = no
 				has_horde_culture = no
@@ -718,7 +719,10 @@ gender_laws = {
 		female_dynasty_opinion = -10
 	
 		potential = {
-			always = yes
+			NOR = { religion = hellenic_amazon }
+		}
+		allow = {
+			NOR = { religion = hellenic_amazon }
 		}
 		effect = {
 			gender_succ = agnatic
@@ -735,6 +739,7 @@ gender_laws = {
 				NOT = { religion_group = muslim }
 				NOT = { religion = aztec }
 				NOT = { religion = aztec_reformed }
+				NOT = { religion = hellenic_amazon }
 				is_tribal = no
 				is_nomadic = no
 				has_horde_culture = no
@@ -781,11 +786,11 @@ gender_laws = {
 		
 		potential = {
 			holder_scope = { 
-				religion_group = amazonian
+				religion = hellenic_amazon
 			}
 		}
 		allow = {
-			religion_group = amazonian
+			religion = hellenic_amazon
 		}
 		effect = {
 			always = yes

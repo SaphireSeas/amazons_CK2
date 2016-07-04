@@ -4,8 +4,6 @@ amazonian = {
 	playable = yes
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 2 # always try to convert
-	
-	
 
 	hellenic_amazon = {
 		graphical_culture = westerngfx
@@ -24,13 +22,15 @@ amazonian = {
 		scripture_name = THE_LEGENDS
 		priest_title = AUGUR
 		
+		priests_can_marry = yes		
 		female_temple_holders = yes
 		allow_looting = yes
 		feminist = yes
+		allow_rivermovement = yes
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 
-		aggression = 2
+		aggression = 3
 	}
 }
